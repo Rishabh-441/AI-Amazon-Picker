@@ -4,7 +4,7 @@
 import plotly.graph_objects as go
 from PIL import Image
 from nltk.corpus import stopwords
-from scipy.optimize import direct
+# from scipy.optimize import direct
 from selenium.common import TimeoutException
 # from requests import options
 from selenium.webdriver import ActionChains
