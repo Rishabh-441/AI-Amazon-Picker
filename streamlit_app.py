@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 import re
 # import time
 import numpy as np
-import tensorflow 
+# import tensorflow 
 # from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
