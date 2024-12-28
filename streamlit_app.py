@@ -109,8 +109,8 @@ if "compute_signal" not in st.session_state:
 
 def is_amazon_product_url(url):
     # Regular expression to check if the URL is an Amazon product page (full and shortened URLs)
-    amazon_pattern = r"(https?://(?:www\.)?amazon\.[a-z]+/.*?/dp/\w+|https?://(?:www\.)?amzn\.[a-z]+/d/\w+)"
-    return re.match(amazon_pattern, url) is not None
+    amazon_pattern = r"^https?:\/\/(?:www\.)?(amazon\.[a-z]+|amzn\.[a-z]+)(\/(dp|d|[^\/]+)\/\w+)(\/.*)?(\?.*)?$"
+    return re.match(amazon_pattern, url.strip()) is not None
 
 
 # ________________________________________________________________________________________________________________________
