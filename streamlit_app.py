@@ -63,21 +63,21 @@ tokenizer_file_path = 'tokenizer.pkl'
 
 with open(model_file_path, 'rb') as f:
      model = pickle.load(f)
-"""
-# Load the data from the smaller pickle file
-with open('my_sentiment_model_smaller.pkl', 'rb') as file:
-    model_data = pickle.load(file)
 
-# Extract the architecture and weights
+# # Load the data from the smaller pickle file
+# with open('my_sentiment_model_smaller.pkl', 'rb') as file:
+#     model_data = pickle.load(file)
 
-model_architecture = model_data['architecture']
-model_weights = model_data['weights']
-# Create a new model instance from the saved architecture
-model = tf.keras.models.model_from_json(model_architecture)
+# # Extract the architecture and weights
 
-# Load the saved weights into the model
-model.set_weights(model_weights)
-"""
+# model_architecture = model_data['architecture']
+# model_weights = model_data['weights']
+# # Create a new model instance from the saved architecture
+# model = tf.keras.models.model_from_json(model_architecture)
+
+# # Load the saved weights into the model
+# model.set_weights(model_weights)
+
 with open(tokenizer_file_path, 'rb') as handle:
     tokenizer = pickle.load(handle)
 
