@@ -65,7 +65,7 @@ with open(model_file_path, 'rb') as f:
      model = pickle.load(f)
 
 # Load the data from the smaller pickle file
-with open('my_sentiment_model_smaller.pkl', 'rb') as file:
+with open('my_sentiment_model.pkl', 'rb') as file:
     model_data = pickle.load(file)
 
 # Extract the architecture and weights
