@@ -515,7 +515,7 @@ def display_home_page():
     image = Image.open(img_path)
 
     # Display the image
-    st.image(image, caption="LSTM Model Accuracy Over Time", use_container_width=True)
+    st.image(image, caption="LSTM Model Accuracy Over Time", use_column_width=True)
 
     # Why Choose This Tool Section
     st.markdown("### 🌟 **Why Choose Amazon Review Analyzer?**")
