@@ -19,12 +19,12 @@ jsonschema-specifications==2024.10.1
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
-nltk==3.9
+nltk==3.8.1
 numpy==2.2.1
 outcome==1.3.0.post0
 packaging==24.2
-pandas==2.0.3
-pillow==11.0.0
+pandas==2.2.3
+Pillow==10.0.0
 plotly==5.10.0
 protobuf==3.20.3
 pyarrow==18.1.0
